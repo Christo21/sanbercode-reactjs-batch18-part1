@@ -1,0 +1,59 @@
+body{
+	background-image: url("../img/pattern.jpg");
+	margin: 0;
+}
+
+.nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+.nav li{
+	float: right;
+}
+
+.nav li a {
+	display: block;
+	color: navy;
+	text-align: center;
+	padding: 23px;
+	text-decoration: none;
+}
+
+.nav li a:hover {
+	background-color: lightgray;
+}	
+
+section {
+	background-color: white;
+	margin: 10px 200px;
+	padding: 10px;
+}
+
+#article-list div{
+	margin-top: 50px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin-bottom: 50px;
+}
+
+.label{
+	width: 150px;
+	display: inline-block;
+}
+
+.field{
+	margin: 15px 0;
+}
+
+.field-radio{
+	display: inline-block;
+}

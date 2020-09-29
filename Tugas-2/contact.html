@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header>
+      <nav>
+        <ul class="nav">
+          <li style="float: left;"><img src="./img/logo.png" height="60px" /></li>
+          <li><a href="index.html"><b>Home</b></a></li>
+          <li><a href="about.html"><b>About</b></a></li>
+          <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+    	<h1 style="text-align: center;">Hubungi Kami</h1>
+		<p><b>Kantor :</b> Google</p>
+		<p><b>Nomor Telepon :</b> 0812-3456-789</p>
+		<p><b>Email :</b> email@apa.com</p>
+
+		<h1 style="text-align: center;">Kirimkan Pesan</h1>
+		<form>
+			<div class="field">
+				<div class="label"><label><b>Nama</b></label></div>
+				<input type="text" name="nama">
+			</div>
+			<div class="field">
+				<div class="label"><label><b>Email</b></label></div>
+				<input type="email" name="email">
+			</div>
+			<div class="field">
+				<div class="label"><label><b>Jenis Kelamin</b></label></div>	
+				<div class="field-radio" >
+					<div>
+						<input type="radio" name="jeniskelamin" value="Laki-Laki">
+						<label>Laki-laki</label>
+					</div>
+					<div>
+						<input type="radio" name="jeniskelamin" value="Perempuan">
+						<label>Perempuan</label>
+					</div>
+				</div>
+			</div>
+			<div class="field">
+				<div class="label"><label><b>Pesan Anda</b></label></div>
+				<textarea rows="5" cols="40" name="pesan"></textarea>
+			</div>
+			<button>kirim</button>
+		</form>
+		<br>
+		<a href="index.html">Kembali Ke Index</a>
+    </section>
+</body>
+</html>
