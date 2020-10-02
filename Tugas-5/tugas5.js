@@ -33,12 +33,12 @@ console.log(perkenalan);
 
 console.log("================================");
 console.log("Jawaban soal 4");
-//var arrayDaftarPeserta = ["Asep", "laki-laki", "baca buku" , 1992];
+var arrayDaftarPeserta = ["Asep", "laki-laki", "baca buku" , 1992];
 var objPeserta = {
-    nama : "Asep", 
-    jenisKelamin : "laki-laki", 
-    hobi : "baca buku",
-    tahunLahir : 1992
+    nama : arrayDaftarPeserta[0], 
+    jenisKelamin : arrayDaftarPeserta[1], 
+    hobi : arrayDaftarPeserta[2],
+    tahunLahir : arrayDaftarPeserta[3]
 }
 console.log(objPeserta);
 
@@ -72,24 +72,11 @@ console.log("Jawaban soal 6");
 
 var dataFilm = [];
 
-function addfilm(obj){
-    dataFilm.push(obj);
+function addfilm(nama, durasi, genre, tahun){
+    dataFilm.push({nama: nama, durasi: durasi, genre: genre, tahun: tahun});
 }
 
-var objFilm1 = {
-    nama : "It's okay to not be okay",
-    durasi : "1 jam",
-    genre : "drama",
-    tahun : 2020
-}
-var objFilm2 = {
-    nama : "Record of Youth",
-    durasi : "40 menit",
-    genre : "drama, comedy",
-    tahun : 2019
-}
-
-addfilm(objFilm1);
-addfilm(objFilm2);
+addfilm("It's okay to not be okay","1 jam","drama",2020);
+addfilm("Record of youth","40 menit","drama, comedy",2019);
 
 console.log(dataFilm);
