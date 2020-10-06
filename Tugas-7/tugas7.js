@@ -16,16 +16,16 @@ class Animal {
     get animalLegs(){
         return this.legs;
     }
-    get animalCold_blooded(){
+    get animalColdBlooded(){
         return this.cold_blooded;
     }
 }
 
 var sheep = new Animal("shaun");
 
-console.log(sheep.name);
-console.log(sheep.legs);
-console.log(sheep.cold_blooded);
+console.log(sheep.animalName);
+console.log(sheep.animalLegs);
+console.log(sheep.animalColdBlooded);
 
 class Frog extends Animal {
     constructor(name) {
