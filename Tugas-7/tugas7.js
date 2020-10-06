@@ -3,29 +3,26 @@ console.log("Jawaban soal 1");
 
 class Animal {
     constructor(name) {
-        this.name = name;
-        this.legs = 4;
-        this.cold_blooded = false;
+        this._name = name;
+        this._legs = 4;
+        this._cold_blooded = false;
     }
-    get animalName(){
-        return this.name;
+    get name(){
+        return this._name;
     }
-    set animalName(x){
-        this.name = x;
+    get legs(){
+        return this._legs;
     }
-    get animalLegs(){
-        return this.legs;
-    }
-    get animalColdBlooded(){
-        return this.cold_blooded;
+    get cold_blooded(){
+        return this._cold_blooded;
     }
 }
 
 var sheep = new Animal("shaun");
 
-console.log(sheep.animalName);
-console.log(sheep.animalLegs);
-console.log(sheep.animalColdBlooded);
+console.log(sheep.name);
+console.log(sheep.legs);
+console.log(sheep.cold_blooded);
 
 class Frog extends Animal {
     constructor(name) {
@@ -39,7 +36,7 @@ class Frog extends Animal {
 class Ape extends Animal {
     constructor(name) {
         super(name);
-        this.legs = 2;
+        this._legs = 2;
     }
     yell() {
         console.log("Auooo");
